@@ -1,10 +1,26 @@
-echo "INSTALL OF BREW"
+#!/bin/bash
 
+echo "Add Alias"
+alias ll='ls -FGlAhp'
+alias cd..="cd .."
+
+alias myip='curl ip.appspot.com'                    # Public facing IP Address
+alias netCons='lsof -i'                             # Show all open TCP/IP sockets
+alias flushDNS='dscacheutil -flushcache'            # Flush out the DNS Cache
+alias lsock='sudo /usr/sbin/lsof -i -P'             # Display open sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # Display only open UDP sockets
+alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # Display only open TCP sockets
+alias ipInfo0='ipconfig getpacket en0'              # Get info on connections for en0
+alias ipInfo1='ipconfig getpacket en1'              # Get info on connections for en1
+alias openPorts='sudo lsof -i | grep LISTEN'        # All listening connections
+alias showBlocked='sudo ipfw list'                  # All ipfw rules inc/ blocked IPs
+
+
+echo "INSTALL OF BREW"
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 
 echo "INSTALL OF GIT"
-
 brew install git
 
 
