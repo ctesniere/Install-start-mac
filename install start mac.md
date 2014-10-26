@@ -1,6 +1,8 @@
-#!/bin/bash
+# Installation de Mac OSX
 
-echo "Add Alias"
+## Ajout d'alias
+
+```bash
 alias ll='ls -FGlAhp'
 alias cd..="cd .."
 
@@ -14,18 +16,23 @@ alias ipInfo0='ipconfig getpacket en0'              # Get info on connections fo
 alias ipInfo1='ipconfig getpacket en1'              # Get info on connections for en1
 alias openPorts='sudo lsof -i | grep LISTEN'        # All listening connections
 alias showBlocked='sudo ipfw list'                  # All ipfw rules inc/ blocked IPs
+```
 
+## Brew
 
-echo "INSTALL OF BREW"
+```
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
 
+## Git
 
-echo "INSTALL OF GIT"
+```
 brew install git
+```
 
+Configuration de votre environnement Git
 
-echo "CONFIGURATION OF GIT"
-
+```
 git config --global pull.rebase true
 git config --global push.default nothing
 
@@ -39,3 +46,10 @@ git config --global credential.helper osxkeychain
 # Utilisation de sublime text pour edité
 sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /bin/subl
 git config --global core.editor "subl -n -w"
+```
+
+## Installation de votre environement PHP
+
+Apache et PHP sont déjà installer par defaut sur votre mac mais il faudra les configurer et installer MySQL
+
+[http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/](http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
