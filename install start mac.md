@@ -53,3 +53,12 @@ git config --global core.editor "subl -n -w"
 Apache et PHP sont déjà installer par defaut sur votre mac mais il faudra les configurer et installer MySQL
 
 [http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/](http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
+
+
+## Javascript
+
+### NPM
+
+```
+sudo chown -R $(whoami) "$HOME/.npm"
+```
