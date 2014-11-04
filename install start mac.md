@@ -20,7 +20,7 @@ alias showBlocked='sudo ipfw list'                  # All ipfw rules inc/ blocke
 
 ## Brew
 
-```
+```bash
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ```
 
@@ -32,7 +32,7 @@ brew install git
 
 Configuration de votre environnement Git
 
-```
+```bash
 git config --global pull.rebase true
 git config --global push.default nothing
 
@@ -59,6 +59,6 @@ Apache et PHP sont déjà installer par defaut sur votre mac mais il faudra les 
 
 ### NPM
 
-```
+```bash
 sudo chown -R $(whoami) "$HOME/.npm"
 ```
