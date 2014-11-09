@@ -61,8 +61,11 @@ Apache et PHP sont déjà installer par defaut sur votre mac mais il faudra les 
 
 ```bash
 brew install npm
+
 # http://stackoverflow.com/questions/15633029/npm-no-longer-working
 # http://foohack.com/2010/08/intro-to-npm/
 sudo chown -R $(whoami) "$HOME/.npm"
 sudo chown -R $USER /usr/local
+
+npm install -g nodemon
 ```
