@@ -78,3 +78,4 @@ brew install mongodb
 
 brew install mongodb --with-openssl # Build MongoDB from Source with SSL Support
 brew install mongodb --devel # Install the Latest Development Release of MongoDB
+```
